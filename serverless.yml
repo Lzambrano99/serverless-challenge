@@ -8,6 +8,7 @@ provider:
     - Effect: Allow
       Action: 
         - dynamodb:*
+      Resource: #SET YOUR ARN TABLE
 
 plugins:
   - serverless-offline
