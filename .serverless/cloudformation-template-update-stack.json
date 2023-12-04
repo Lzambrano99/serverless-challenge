@@ -169,7 +169,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless-nestj-dynamodb/dev/1701650815289-2023-12-04T00:46:55.289Z/serverless-nestj-dynamodb.zip"
+          "S3Key": "serverless/serverless-nestj-dynamodb/dev/1701655484013-2023-12-04T02:04:44.013Z/serverless-nestj-dynamodb.zip"
         },
         "Handler": "dist/index.handler",
         "Runtime": "nodejs20.x",
@@ -187,14 +187,14 @@
         "IndexLogGroup"
       ]
     },
-    "IndexLambdaVersion24rYWt07JOtSuFnPqUKvCJKxNRFcXKFRGamHFUaVGY": {
+    "IndexLambdaVersioneNUIWI7OyRkZc7fmVO9pNjlbguPEf4wj2Ts4tHB79Bo": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "IndexLambdaFunction"
         },
-        "CodeSha256": "r+D59NIufqeFCZUxrY8QCuHrKHc+RsOL94pNEcv0kwA="
+        "CodeSha256": "66vr/Uwm/cBr2rURfIY/16TbpZ5eIUca9m4UhYWEyjc="
       }
     },
     "ApiGatewayRestApi": {
@@ -412,7 +412,7 @@
         "IndexLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1701650798160": {
+    "ApiGatewayDeployment1701655468147": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -496,7 +496,7 @@
     "IndexLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "IndexLambdaVersion24rYWt07JOtSuFnPqUKvCJKxNRFcXKFRGamHFUaVGY"
+        "Ref": "IndexLambdaVersioneNUIWI7OyRkZc7fmVO9pNjlbguPEf4wj2Ts4tHB79Bo"
       },
       "Export": {
         "Name": "sls-serverless-nestj-dynamodb-dev-IndexLambdaFunctionQualifiedArn"

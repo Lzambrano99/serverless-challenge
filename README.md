@@ -79,6 +79,36 @@ $ npm run build
 $ sls deploy
 ```
 
+## Endpoints
+
+Your Nest.js application is deployed as a Serverless service on AWS, and it exposes the following endpoints:
+
+- **Base URL:** `https://3uowuddaw3.execute-api.us-east-1.amazonaws.com/dev/`
+
+### Available Routes
+
+- **Create Employee:**
+  - **Endpoint:** `POST /employees/createEmployee`
+  - **Description:** Create a new employee.
+
+- **Get Employee by ID:**
+  - **Endpoint:** `GET /employees/getEmployeeById/{id}`
+  - **Description:** Get details of a specific employee by ID.
+
+- **Update Employee:**
+  - **Endpoint:** `PUT /employees/updateEmployee/{id}`
+  - **Description:** Update information for a specific employee by ID.
+
+- **Delete Employee:**
+  - **Endpoint:** `DELETE /employees/deleteEmployee/{id}`
+  - **Description:** Delete a specific employee by ID.
+
+- **Get All Employees:**
+  - **Endpoint:** `GET /employees/getAllEmployees`
+  - **Description:** Get a list of all employees.
+
+Feel free to modify this section according to your actual routes and endpoints. This provides users with a quick reference to understand how to interact with your deployed application.
+Please note that the base URL https://3uowuddaw3.execute-api.us-east-1.amazonaws.com/dev/ is just an example, and you should replace it with the URL provided by your own Serverless deployment.
 
 ## Support
 
