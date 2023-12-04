@@ -31,32 +31,54 @@
 ```bash
 $ npm install
 ```
+### Serverless Credentials
 
-## Running the app
-
+Before deploying with Serverless, make sure to set up your AWS credentials. If you haven't configured your AWS credentials, you can do so by installing the AWS CLI and running:
 ```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+$ aws configure
+$ accessKeyId: YOUR_ACCESS_KEY_ID
+$ secretAccessKey: YOUR_SECRET_ACCESS_KEY
+$ region: YOUR_REGION
 ```
 
-## Test
+# build the Nest app
+```bash
+$ npm run build
+
+# deploy using Serverless framework
+$ sls deploy
+```
+
+Afther deploying, obtain the ARN of the DynamoDB table from your AWS console and update the serverless.yml file:
 
 ```bash
-# unit tests
-$ npm run test
+# serverless.yml
 
-# e2e tests
-$ npm run test:e2e
+# ... (other configurations)
 
-# test coverage
-$ npm run test:cov
+provider:
+  name: aws
+  runtime: nodejs20.x
+  region: us-east-1
+  iamRoleStatements:
+    - Effect: Allow
+      Action: 
+        - dynamodb:PutItem
+        - dynamodb:GetItem
+        - dynamodb:Query
+        - dynamodb:Scan
+        - dynamodb:UpdateItem
+        - dynamodb:DeleteItem
+      Resource: "YOUR_DYNAMODB_TABLE_ARN" # SET YOUR ARN TABLE
 ```
+Finish:
+```bash
+$ npm run build
+
+# deploy using Serverless framework
+$ sls deploy
+```
+
 
 ## Support
 
