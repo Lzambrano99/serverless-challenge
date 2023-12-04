@@ -87,7 +87,7 @@ Your Nest.js application is deployed as a Serverless service on AWS, and it expo
 - **Example body:** 
 ```bash
 {
-  "name": "Updated Name",
+  "name": "Jon Doe",
   "age": 31,
   "jobTitle": "Senior Software Engineer"
 }
