@@ -24,11 +24,12 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+This project is a serverless implementation using the NestJS framework and AWS Serverless services. It provides a scalable and efficient backend for building server-side applications. The integration with Serverless allows for easy deployment and management of your NestJS application on AWS.
 
 ## Installation
 
 ```bash
+$ npm install -g serverless
 $ npm install
 ```
 ### Serverless Credentials
