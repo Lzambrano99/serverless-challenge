@@ -84,7 +84,14 @@ $ sls deploy
 Your Nest.js application is deployed as a Serverless service on AWS, and it exposes the following endpoints:
 
 - **Base URL:** `https://3uowuddaw3.execute-api.us-east-1.amazonaws.com/dev/`
-
+- **Example body:** 
+```bash
+{
+  "name": "Updated Name",
+  "age": 31,
+  "jobTitle": "Senior Software Engineer"
+}
+```
 ### Available Routes
 
 - **Create Employee:**
