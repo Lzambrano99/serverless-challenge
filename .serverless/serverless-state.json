@@ -186,7 +186,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/serverless-nestj-dynamodb/dev/1701655484013-2023-12-04T02:04:44.013Z/serverless-nestj-dynamodb.zip"
+                "S3Key": "serverless/serverless-nestj-dynamodb/dev/1701749488811-2023-12-05T04:11:28.811Z/serverless-nestj-dynamodb.zip"
               },
               "Handler": "dist/index.handler",
               "Runtime": "nodejs20.x",
@@ -204,14 +204,14 @@
               "IndexLogGroup"
             ]
           },
-          "IndexLambdaVersioneNUIWI7OyRkZc7fmVO9pNjlbguPEf4wj2Ts4tHB79Bo": {
+          "IndexLambdaVersionFRfKCP2KdDdqxhR4U7kXmFEjFeq17YCbUnz584omF0": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "IndexLambdaFunction"
               },
-              "CodeSha256": "66vr/Uwm/cBr2rURfIY/16TbpZ5eIUca9m4UhYWEyjc="
+              "CodeSha256": "Lqwo8SmIiQ4cPA3EsE/82tAqc/sZbJPhc1+T93UH4Ls="
             }
           },
           "ApiGatewayRestApi": {
@@ -429,7 +429,7 @@
               "IndexLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1701655468147": {
+          "ApiGatewayDeployment1701749474841": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -513,7 +513,7 @@
           "IndexLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "IndexLambdaVersioneNUIWI7OyRkZc7fmVO9pNjlbguPEf4wj2Ts4tHB79Bo"
+              "Ref": "IndexLambdaVersionFRfKCP2KdDdqxhR4U7kXmFEjFeq17YCbUnz584omF0"
             },
             "Export": {
               "Name": "sls-serverless-nestj-dynamodb-dev-IndexLambdaFunctionQualifiedArn"
@@ -694,7 +694,7 @@
         "timeout": 6,
         "runtime": "nodejs20.x",
         "vpc": {},
-        "versionLogicalId": "IndexLambdaVersioneNUIWI7OyRkZc7fmVO9pNjlbguPEf4wj2Ts4tHB79Bo"
+        "versionLogicalId": "IndexLambdaVersionFRfKCP2KdDdqxhR4U7kXmFEjFeq17YCbUnz584omF0"
       }
     },
     "resources": {
@@ -742,7 +742,7 @@
         ],
         "artifactsS3KeyDirname": "serverless/serverless-nestj-dynamodb/dev/code-artifacts",
         "artifact": "C:\\Users\\USER\\Desktop\\serverless-nestj-dynamodb\\.serverless\\serverless-nestj-dynamodb.zip",
-        "artifactDirectoryName": "serverless/serverless-nestj-dynamodb/dev/1701655484013-2023-12-04T02:04:44.013Z"
+        "artifactDirectoryName": "serverless/serverless-nestj-dynamodb/dev/1701749488811-2023-12-05T04:11:28.811Z"
       },
       "functions": {
         "$ref": "$[\"service\"][\"functions\"]"
@@ -756,7 +756,7 @@
     "artifact": "C:\\Users\\USER\\Desktop\\serverless-nestj-dynamodb\\.serverless\\serverless-nestj-dynamodb.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/serverless-nestj-dynamodb/dev/1701655484013-2023-12-04T02:04:44.013Z",
+    "artifactDirectoryName": "serverless/serverless-nestj-dynamodb/dev/1701749488811-2023-12-05T04:11:28.811Z",
     "artifact": "serverless-nestj-dynamodb.zip"
   }
 }

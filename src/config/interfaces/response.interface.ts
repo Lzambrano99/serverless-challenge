@@ -1,7 +1,7 @@
 export interface IResponseSuccess {
     status: "success"
     code: number
-    data?: object
+    data?: object | boolean
 }
 
 export interface IResponseError {

@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { EmployeeEntity } from '../../domain/entities/employee.entity';
 import { v4 as uuidv4 } from 'uuid';
-import { EmployeeRepository } from 'src/infraestructure/database/employee.repository';
+import { EmployeeRepository } from '../../infraestructure/database/employee.repository';
 
 @Injectable()
 export class EmployeeService {
