@@ -8,7 +8,7 @@ provider:
     - Effect: Allow
       Action: 
         - dynamodb:*
-      Resource: "arn:aws:dynamodb:us-east-1:193609063758:table/EmployeeTable"
+      Resource: #YOUR_ARN_TABLE
 
 plugins:
   - serverless-offline
